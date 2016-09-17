@@ -33,42 +33,50 @@ var init = {
                     title: 'Daniel g. Siegel',
                     favicon_image: 'asd.png',
                     url_address: 'dgsiegel.net',
-                    tag: 'Personal'
+                    tag: 'Personal',
+                    like_counter: 2
                 }, {
                     title: 'Ross Pernman',
                     favicon_image: 'asd.png',
                     url_address: 'rosspenman.com',
-                    tag: 'Personal'
+                    tag: 'Personal',
+                    like_counter: 2
                 }, {
                     title: 'goker/resume',
                     favicon_image: 'asd.png',
                     url_address: 'gokercebeci.com/me',
-                    tag: 'Blog'
+                    tag: 'Blog',
+                    like_counter: 2
                 }, {
                     title: 'Gilles Quenot / SO',
                     favicon_image: 'asd.png',
                     url_address: 'goo.gl/fdr5Kq',
-                    tag: 'Social'
+                    tag: 'Social',
+                    like_counter: 2
                 }, {
                     title: 'Nithin Rao Kumlekar',
                     favicon_image: 'asd.png',
                     url_address: 'nithinkumblekar.com',
-                    tag: 'Caricature'
+                    tag: 'Caricature',
+                    like_counter: 2
+                }, {
+                    title: 'webqwe',
+                    favicon_image: 'qwe.png',
+                    url_address: 'qwe.com',
+                    tag: 'Personal',
+                    like_counter: 2
                 }, {
                     title: 'webasd',
                     favicon_image: 'asd.png',
                     url_address: 'asd.com',
-                    tag: 'Personal'
+                    tag: 'Personal',
+                    like_counter: 2
                 }, {
-                    title: 'webasd',
-                    favicon_image: 'asd.png',
-                    url_address: 'asd.com',
-                    tag: 'Personal'
-                }, {
-                    title: 'webasd',
-                    favicon_image: 'asd.png',
-                    url_address: 'asd.com',
-                    tag: 'Personal'
+                    title: 'webzxc',
+                    favicon_image: 'zxc.png',
+                    url_address: 'zxc.com',
+                    tag: 'Personal',
+                    like_counter: 2
                 }])
             }
         })

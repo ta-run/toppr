@@ -11,9 +11,13 @@
         href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
+    <!-- styles -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- js libs -->
     <script src="libs/angular.min.js"></script>
     <script src="libs/ui.router.js"></script>
+
     <!-- scripts -->
     <script src="script.js"></script>
     <script src="controller/app.controller.js"></script>
@@ -22,16 +26,12 @@
 </head>
 
 <body ng-controller="app as a">
-    <div class="progress">
-        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-            <span class="sr-only">60% Complete</span>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <h1>{{a.name}}<small>-- finding the best online websites!</small></h1>
         </div>
-    </div>
-    <h1>Hapi server running</h1>
-    <div class="page-header">
-        <h1>{{a.name}}<small>-- finding the best online websites!</small></h1>
-    </div>
-    <div class="container-fluid">
+    </nav>
+    <div class="container">
         <section class="col-sm-12 col-md-8">
             <div ui-view="listing"></div>
         </section>

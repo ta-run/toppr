@@ -1,18 +1,29 @@
-<div class="search">
-    <input type="text" placeholder="Search by (title url or tag)" ng-model="l.searchQuery"/>
-</div>
-<div ng-repeat="website in l.websites | filter:l.searchQuery" class="website pull-left col-sm-12">
-    <span class="pull-left glyphicon glyphicon-picture"></span>
-    <div class="pull-left details">
-        <p>{{website.title}}</p>
-        <p class="pull-left">
-            <span class="glyphicon glyphicon-tag"></span>
-            <span>{{website.tag}}</span>
-        </p>
-        <span class="pull-left separator"> | </span>
-        <p class="pull-left">
-            <span class="glyphicon glyphicon-link"></span>
-            <a ng-href="{{website.url_address}}" target="_blank">{{website.url_address}}</a>
-        </p>
+<div class="listing col-sm-12">
+    <div class="row">
+        <div class="search col-sm-12">
+            <div class="row">
+                <input type="text" class="form-control" placeholder="Search by (title url or tag)" ng-model="l.search"/>
+            </div>
+        </div>
+        <div ng-repeat="website in l.websites | filter:l.search" class="website pull-left col-sm-12">
+            <span class="glyphicon glyphicon-picture col-sm-1"></span>
+            <div class="details col-sm-11">
+                <p>{{website.title}}</p>
+                <p class="col-sm-12 col-md-4 col-lg-2">
+                    <span class="glyphicon glyphicon-tag"></span>
+                    <span>{{website.tag}}</span>
+                </p>
+                <span class="pull-left separator hidden-xs"> | </span>
+                <p class="col-sm-12 col-md-4 col-lg-4">
+                    <span class="glyphicon glyphicon-link"></span>
+                    <a ng-href="http://{{website.url_address}}" target="_blank">{{website.url_address}}</a>
+                </p>
+                <p class="pull-right like" ng-click="l.like(website)" ng-class="{active: website.liked}">
+                    <span class="glyphicon glyphicon-thumbs-up"></span>
+                    <span class="like-counter">{{website.like_counter}}</span>
+                </p>
+                <span class="pull-right separator hidden-xs"> | </span>
+            </div>
+        </div>
     </div>
 </div>

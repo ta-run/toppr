@@ -10,13 +10,28 @@ body {
     margin: 10px 0;
     width: 100%;
 }
+.search input{
+    padding: 20px 0 20px 20px;
+    font-size: 20px;
+}
 .website .glyphicon-picture:before {
     font-size: 45px;
-}
-.website .details {
-    margin: 0 0 0 20px;
 }
 .website .details .separator {
     margin: -10px 10px;
     font-size: 24px;
+}
+.like {
+    cursor: pointer;
+}
+.like.active {
+    color: green;
+}
+.new-listing {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 50px;
+}
+.new-listing .form-control {
+    margin: 15px 0;
 }
