@@ -17,7 +17,9 @@
                             controllerAs: 'l'
                         },
                         'newListing': {
-                            templateUrl: 'templates/new.listing.html'
+                            templateUrl: 'templates/new.listing.html',
+                            controller: 'newlisting',
+                            controllerAs: 'nl'
                         }
                     }
                 })

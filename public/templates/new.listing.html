@@ -1,9 +1,13 @@
 <div class="new-listing">
+    <div class="alert alert-info" role="alert" ng-show="nl.showalert"><strong>[{{nl.statuscode}}]</strong>: {{nl.message}}</div>
     <div class="row">
         <span>Contribute/Add Website</span>
-        <input class="form-control" type="text" placeholder="title">
-        <input class="form-control" type="text" placeholder="web/url address">
-        <input class="form-control" type="text" placeholder="tag">
-        <button class="form-control btn btn-success">Push Website</button>
+        <input class="form-control" type="text" ng-model="nl.title" placeholder="title">
+        <input class="form-control" type="text" ng-model="nl.url_address" placeholder="web/url address">
+        <input class="form-control" type="text" ng-model="nl.tag" placeholder="tag">
+        <div class="btn-container">
+            <button class="form-control btn btn-success" ng-click="nl.submitNewWebsite(nl.title, nl.url_address, nl.tag)">Push Website</button>
+            <div class="loader" ng-show="nl.loading">Loading...</div>
+        </div>
     </div>
 </div>

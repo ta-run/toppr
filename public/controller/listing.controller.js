@@ -6,8 +6,8 @@
 
 
     function listingController($http) {
-        let vm = this
-        vm.websites
+        const vm = this
+        vm.websites = ""
         vm.searchQuery
 
 
