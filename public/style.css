@@ -21,8 +21,20 @@ body {
     margin: -10px 10px;
     font-size: 24px;
 }
+.website .details p {
+    font-size: 16px;
+}
 .like {
     cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 55px;
+    background: #ccc;
+    height: 100%;
+    border-radius: 0 5px 5px 0;
+    text-align: center;
+    padding: 25px 0 0 0;
 }
 .like.active {
     color: green;
@@ -34,4 +46,12 @@ body {
 }
 .new-listing .form-control {
     margin: 15px 0;
+}
+.details .row span:last-child, .details .row a:last-child {
+    float: left;
+    margin: 0 0 0 10px;
+}
+.details .glyphicon:not(.glyphicon-thumbs-up) {
+    float: left;
+    margin: 3px 0 0 0;
 }

@@ -9,21 +9,24 @@
             <span class="glyphicon glyphicon-picture col-sm-1"></span>
             <div class="details col-sm-11">
                 <p>{{website.title}}</p>
-                <p class="col-sm-12 col-md-4 col-lg-2">
-                    <span class="glyphicon glyphicon-tag"></span>
-                    <span>{{website.tag}}</span>
-                </p>
+                <div class="col-sm-12 col-md-4 col-lg-2">
+                    <div class="row">
+                        <span class="glyphicon glyphicon-tag"></span>
+                        <span>{{website.tag}}</span>
+                    </div>
+                </div>
                 <span class="pull-left separator hidden-xs"> | </span>
-                <p class="col-sm-12 col-md-4 col-lg-4">
-                    <span class="glyphicon glyphicon-link"></span>
-                    <a ng-href="http://{{website.url_address}}" target="_blank">{{website.url_address}}</a>
-                </p>
-                <p class="pull-right like" ng-click="l.like(website)" ng-class="{active: website.liked}">
-                    <span class="glyphicon glyphicon-thumbs-up"></span>
-                    <span class="like-counter">{{website.like_counter}}</span>
-                </p>
-                <span class="pull-right separator hidden-xs"> | </span>
+                <div class="col-sm-12 col-md-4 col-lg-8">
+                    <div class="row">
+                        <span class="glyphicon glyphicon-link"></span>
+                        <a ng-href="http://{{website.url_address}}" target="_blank">{{website.url_address}}</a>
+                    </div>
+                </div>
             </div>
+            <p class="pull-right like" ng-click="l.like(website)" ng-class="{active: website.liked}">
+                <span class="glyphicon glyphicon-thumbs-up"></span>
+                <span class="like-counter" ng-show="website.like_counter > 0">{{website.like_counter}}</span>
+            </p>
         </div>
     </div>
 </div>
