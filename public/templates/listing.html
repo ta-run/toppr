@@ -1,0 +1,18 @@
+<div class="search">
+    <input type="text" placeholder="Search by (title url or tag)" ng-model="l.searchQuery"/>
+</div>
+<div ng-repeat="website in l.websites | filter:l.searchQuery" class="website pull-left col-sm-12">
+    <span class="pull-left glyphicon glyphicon-picture"></span>
+    <div class="pull-left details">
+        <p>{{website.title}}</p>
+        <p class="pull-left">
+            <span class="glyphicon glyphicon-tag"></span>
+            <span>{{website.tag}}</span>
+        </p>
+        <span class="pull-left separator"> | </span>
+        <p class="pull-left">
+            <span class="glyphicon glyphicon-link"></span>
+            <a ng-href="{{website.url_address}}" target="_blank">{{website.url_address}}</a>
+        </p>
+    </div>
+</div>

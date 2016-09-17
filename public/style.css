@@ -1,0 +1,22 @@
+body {
+    font-family: "Segoe UI", "Lucida grande", "Helvetica", "Comic Sans";
+    background: #EAEAEA;
+}
+.website {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+}
+.website .glyphicon-picture:before {
+    font-size: 45px;
+}
+.website .details {
+    margin: 0 0 0 20px;
+}
+.website .details .separator {
+    margin: -10px 10px;
+    font-size: 24px;
+}
